@@ -2,6 +2,7 @@
 <com.arpitonline.customlayoutmeasuretest.views.EquiDividerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    
      >
      
     <LinearLayout 
@@ -11,11 +12,12 @@
  	   android:id="@+id/child_linear_layout"
        android:background="#0000ff">
         
-         <View 
-        	android:background="#ffffff"
-    	  	android:layout_width="fill_parent"
+         <TextView 
+        	android:layout_width="fill_parent"
+        	android:text="@string/copy"
  	   		android:layout_height="0dip"
- 	   		android:layout_weight=".5" />
+ 	   		android:layout_weight=".5" 
+ 	   		android:paddingRight="20dip"/>
     
 	    <View 
 	        android:background="#ff00ff"
@@ -27,8 +29,9 @@
 
     <View 
         android:background="#ff0000"
-    	  android:layout_width="fill_parent"
- 	   android:layout_height="fill_parent" />
+        
+    	android:layout_width="fill_parent"
+ 	   	android:layout_height="fill_parent" />
     
     <View 
         android:background="#00ff00"
