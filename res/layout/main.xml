@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.arpitonline.customlayoutmeasuretest.views.EquiDividerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+     
+    <LinearLayout 
+       android:layout_width="fill_parent"
+ 	   android:layout_height="fill_parent" 
+ 	   android:orientation="vertical"
+ 	   android:id="@+id/child_linear_layout"
+       android:background="#0000ff">
+        
+         <View 
+        	android:background="#ffffff"
+    	  	android:layout_width="fill_parent"
+ 	   		android:layout_height="0dip"
+ 	   		android:layout_weight=".5" />
+    
+	    <View 
+	        android:background="#ff00ff"
+	    	android:layout_width="fill_parent"
+	 	  	android:layout_height="0dip"
+ 	   		android:layout_weight=".5"  />
+        
+    </LinearLayout>
+
+    <View 
+        android:background="#ff0000"
+    	  android:layout_width="fill_parent"
+ 	   android:layout_height="fill_parent" />
+    
+    <View 
+        android:background="#00ff00"
+    	  android:layout_width="fill_parent"
+ 	   android:layout_height="fill_parent" />
+
+</com.arpitonline.customlayoutmeasuretest.views.EquiDividerLayout>
