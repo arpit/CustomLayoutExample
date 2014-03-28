@@ -62,7 +62,7 @@ public class EquiDividerLayout extends ViewGroup {
 		int itemWidth = (r-l)/getChildCount();
 		for(int i=0; i< this.getChildCount(); i++){
 			View v = getChildAt(i);
-			v.layout(itemWidth*i, t, (i+1)*itemWidth, b);
+			v.layout(itemWidth*i, 0, (i+1)*itemWidth, b-t);
 		}
 		
 	}
